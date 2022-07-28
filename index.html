@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Language of the Sith</title>
+
+  <style>
+
+    :root {
+      --primary-color: #d92323;
+      --black: #000000;
+      --white: #ffffff;
+      --hover-color: #870000;
+    }
+
+    p {
+      margin-bottom: 2rem;
+      text-align: justify;
+    }
+
+    textarea {
+      height: 10vh;
+      padding: 1rem;
+      display: block;
+      width: 96%;
+      opacity: 80%;
+      font-size: large;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+    }
+
+    #output {
+      height: 10vh;
+      padding: 1rem;
+      border: 1px solid var(--black);
+      background-color: var(--white);
+      opacity: 80%;
+      margin-top: 1rem;
+      border-radius: 0.5rem;
+    }
+
+    body {
+      background-image: url("./sith.jpg");
+      background-repeat: no-repeat;
+      background-size:cover;
+      font-size: large;
+      margin: 0;
+      font-family: monospace;
+    }
+    
+    main {
+      padding-left: 2rem;
+      width: 55%;
+
+    }
+
+    button {
+      padding: 0.5rem 1rem 0.5rem 1rem;
+      margin: 0rem 0rem 4rem 0rem;
+      background-color: var(--black);
+      color: var(--primary-color);
+      font-weight: 600;
+      font-family: monospace;
+      font-size: larger;
+      cursor: pointer;
+      border-radius: 0.3rem;
+    }
+
+    button:hover {
+      background-color: var(--primary-color) ;
+      color: var(--black);
+      box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.258);
+    }
+
+    button:active {
+      transform: translateY(4px);
+    }
+
+    header {
+      font-size: 2rem;
+      font-weight: 600;
+      background-color: var(--black);
+      padding: 1rem 1rem 1rem 2rem;
+      margin-bottom: 2rem;
+      color: var(--white);
+    }
+
+    footer {
+      padding: 1.5rem;
+      bottom: 0;
+      width: 100%;
+      position: fixed;
+    }
+
+    .list-style {
+      list-style: none;
+      padding-inline-start: 0px;
+    }
+
+    .list-style-inline {
+      display: inline;
+      padding: 0rem 0.5rem;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header>
+      <div>Sith Translator</div>
+  </header>
+
+  <main>
+  <p>Convert from English to Starwars Sith language. The Sith language was the native language of the people of the pureblood Sith from the movie Star Wars. Even after the extinction of the Sith species, the language was preserved in Sith holocrons, temples, and tomes from a different variety of Sith Lords and historians.</p>
+  
+  <textarea id="txt-input" placeholder= "Put some english text here and we will convert it to sith language!"></textarea>
+  <button id="btn-translate">Translate</button>
+
+  <div style= "font-size: larger;">Here you go 👇</div>
+  <div id="output"></div>
+</main>
+
+  <footer>
+    <ul class="list-style">
+      <li class="list-style-inline">
+        <a href="https://twitter.com/0xbasantani" target="_blank"><img src="./twitter1.svg"></a>
+      </li>
+      <li class="list-style-inline">
+        <a href="https://github.com/Vai8hav" target="_blank"><img src="./github.svg"></a>
+      </li>
+      <li class="list-style-inline">
+        <a href="https://www.linkedin.com/in/vaibhavbasantani/" target="_blank"><img src="./linkedin.svg"></a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="./sith-translate.js"></script>
+</body>
+</html>
